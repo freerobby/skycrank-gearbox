@@ -22,6 +22,7 @@ GIT
       winrm (~> 1.1.3)
 
 GEM
+  remote: https://rubygems.org/
   specs:
     akami (1.2.2)
       gyoku (>= 0.4.0)
