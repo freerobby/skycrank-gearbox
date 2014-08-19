@@ -236,4 +236,11 @@ running it in production :) Or, if I'd decided to do so initially, once I ran
 across the first show stopper bug (unable to build the cluster) I should have cut
 my losses and moved on.
 
+I also think I under-estimated the time it would take to come up to speed with
+using chef in a chef-server environment.  Building servers with chef-solo, which
+is where all my chef experience currently lies, vastly simplifies the developer
+surface area for working with chef, at the expense of some really awesome features.
 
+I had been relying on the chef-metal approach with its local mode chef-zero 
+compatability to allow me to deliver a solution in a very constrained period of
+time, and as stated above, that didn't pan out.
