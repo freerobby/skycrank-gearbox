@@ -1,7 +1,7 @@
 require 'chef_metal'
 require 'chef_metal_vagrant'
 
-vagrant_cluster '/Users/cpatti/Vagrants'
+vagrant_cluster File.join(File.dirname(__FILE__), 'Vagrants')
 
 vagrant_box 'chef/ubuntu-14.04' do
   url 'https://vagrantcloud.com/chef/ubuntu-14.04/version/1/provider/virtualbox.box'
