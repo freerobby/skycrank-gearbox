@@ -77,9 +77,9 @@
       "/dev/disk0s2": {
         "block_size": 512,
         "kb_size": 244277768,
-        "kb_used": 91560592,
-        "kb_available": 152461176,
-        "percent_used": "38%",
+        "kb_used": 93271552,
+        "kb_available": 150750216,
+        "percent_used": "39%",
         "mount": "/",
         "fs_type": "hfs",
         "mount_options": [
@@ -89,8 +89,8 @@
       },
       "devfs": {
         "block_size": 512,
-        "kb_size": 184,
-        "kb_used": 184,
+        "kb_size": 183,
+        "kb_used": 183,
         "kb_available": 0,
         "percent_used": "100%",
         "mount": "/dev",
@@ -639,9 +639,9 @@
     },
     "memory": {
       "total": "8192MB",
-      "active": "5761MB",
-      "inactive": "1904MB",
-      "free": "525MB"
+      "active": "4834MB",
+      "inactive": "1209MB",
+      "free": "2146MB"
     },
     "network": {
       "interfaces": {
@@ -716,7 +716,7 @@
               "prefixlen": "64",
               "scope": "Global"
             },
-            "2002:4c77:eb22::85cd:9151:c288:32ce": {
+            "2002:4c77:eb22::d536:8091:fcfc:a9da": {
               "family": "inet6",
               "prefixlen": "64",
               "scope": "Global"
@@ -737,7 +737,7 @@
           "arp": {
             "192.168.1.1": "20:c9:d0:12:b0:19",
             "192.168.1.21": "20:c9:d0:12:8a:9e",
-            "192.168.1.31": "20:c9:d0:12:b0:19",
+            "192.168.1.47": "8c:2d:aa:e9:44:85",
             "192.168.1.56": "70:cd:60:f3:18:3d",
             "192.168.1.134": "20:c9:d0:12:b0:19",
             "192.168.1.255": "ff:ff:ff:ff:ff:ff"
@@ -967,8 +967,8 @@
         "net.inet.tcp.sack_globalholes": "0",
         "net.inet.tcp.minmss": "216",
         "net.inet.tcp.do_tcpdrain": "0",
-        "net.inet.tcp.pcbcount": "67",
-        "net.inet.tcp.tw_pcbcount": "14",
+        "net.inet.tcp.pcbcount": "33",
+        "net.inet.tcp.tw_pcbcount": "0",
         "net.inet.tcp.icmp_may_rst": "1",
         "net.inet.tcp.strict_rfc1948": "0",
         "net.inet.tcp.isn_reseed_interval": "0",
@@ -976,7 +976,7 @@
         "net.inet.tcp.rtt_min": "100",
         "net.inet.tcp.rexmt_slop": "200",
         "net.inet.tcp.randomize_ports": "0",
-        "net.inet.tcp.newreno_sockets": "67",
+        "net.inet.tcp.newreno_sockets": "33",
         "net.inet.tcp.background_sockets": "0",
         "net.inet.tcp.win_scale_factor": "3",
         "net.inet.tcp.tcbhashsize": "4096",
@@ -989,7 +989,7 @@
         "net.inet.tcp.broken_peer_syn_rxmit_thres": "7",
         "net.inet.tcp.broken_peer_syn_rexmit_thres_local": "10",
         "net.inet.tcp.tcp_timer_advanced": "5",
-        "net.inet.tcp.tcp_resched_timerlist": "5699",
+        "net.inet.tcp.tcp_resched_timerlist": "7595",
         "net.inet.tcp.pmtud_blackhole_detection": "1",
         "net.inet.tcp.pmtud_blackhole_mss": "1200",
         "net.inet.tcp.timer_fastquantum": "100",
@@ -1022,7 +1022,7 @@
         "net.inet.ipsec.esp_port": "0",
         "net.inet.raw.maxdgram": "8192",
         "net.inet.raw.recvspace": "8192",
-        "net.inet.raw.pcbcount": "6",
+        "net.inet.raw.pcbcount": "3",
         "net.link.generic.system.ifcount": "8",
         "net.link.generic.system.if_verbose": "0",
         "net.link.generic.system.dlil_lladdr_ckreq": "0",
@@ -1117,7 +1117,7 @@
         "net.inet6.ip6.use_deprecated": "1",
         "net.inet6.ip6.rr_prune": "5",
         "net.inet6.ip6.v6only": "0",
-        "net.inet6.ip6.rtexpire": "18",
+        "net.inet6.ip6.rtexpire": "12",
         "net.inet6.ip6.rtminexpire": "10",
         "net.inet6.ip6.rtmaxcache": "128",
         "net.inet6.ip6.use_tempaddr": "1",
@@ -1202,9 +1202,9 @@
         "interfaces": {
           "lo0": {
             "rx": {
-              "bytes": "41113",
+              "bytes": "46758",
               "packets": "0",
-              "errors": "113871001",
+              "errors": "116365200",
               "drop": 0,
               "overrun": 0,
               "frame": 0,
@@ -1214,7 +1214,7 @@
             "tx": {
               "bytes": "0",
               "packets": "0",
-              "errors": "113871001",
+              "errors": "116365200",
               "drop": 0,
               "overrun": 0,
               "collisions": "0",
@@ -1268,8 +1268,8 @@
           },
           "en0": {
             "rx": {
-              "bytes": "235301236",
-              "packets": "277669",
+              "bytes": "778922744",
+              "packets": "675962",
               "errors": "0",
               "drop": 0,
               "overrun": 0,
@@ -1278,8 +1278,8 @@
               "multicast": 0
             },
             "tx": {
-              "bytes": "105078049",
-              "packets": "260950",
+              "bytes": "123270180",
+              "packets": "423782",
               "errors": "0",
               "drop": 0,
               "overrun": 0,
@@ -1381,15 +1381,15 @@
     },
     "ipaddress": "192.168.1.52",
     "macaddress": "b8:e8:56:44:df:c8",
-    "ip6address": "2002:4c77:eb22:0:85cd:9151:c288:32ce",
+    "ip6address": "2002:4c77:eb22:0:bae8:56ff:fe44:dfc8",
     "os": "darwin",
     "os_version": "13.3.0",
     "platform": "mac_os_x",
     "platform_version": "10.9.4",
     "platform_build": "13E28",
     "platform_family": "mac_os_x",
-    "uptime_seconds": 92755,
-    "uptime": "1 day 01 hours 45 minutes 55 seconds",
+    "uptime_seconds": 105907,
+    "uptime": "1 day 05 hours 25 minutes 07 seconds",
     "languages": {
       "c": {
         "gcc": {
@@ -1461,7 +1461,7 @@
       "ssh": {
       }
     },
-    "ohai_time": 1408394504.463407,
+    "ohai_time": 1408407656.756585,
     "etc": {
       "passwd": {
         "_amavisd": {

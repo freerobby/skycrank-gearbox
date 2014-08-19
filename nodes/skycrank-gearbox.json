@@ -12,33 +12,34 @@
         "vm_file_path": "/Users/cpatti/Vagrants/skycrank-gearbox.vm",
         "allocated_at": "2014-08-18 19:02:48 UTC",
         "host_node": "http://localhost:8889/nodes/",
-        "needs_reload": false
+        "needs_reload": false,
+        "forwarded_ports": {
+        }
       }
     }
   },
   "automatic": {
     "root_group": "root",
-    "uptime_seconds": 12665,
-    "uptime": "3 hours 31 minutes 05 seconds",
-    "idletime_seconds": 12633,
-    "idletime": "3 hours 30 minutes 33 seconds",
+    "uptime_seconds": 73,
+    "uptime": "1 minutes 13 seconds",
+    "idletime_seconds": 57,
+    "idletime": "57 seconds",
     "filesystem": {
       "/dev/mapper/vagrant--vg-root": {
         "kb_size": "40129116",
-        "kb_used": "1181156",
-        "kb_available": "36886444",
+        "kb_used": "1209796",
+        "kb_available": "36857804",
         "percent_used": "4%",
         "mount": "/",
         "total_inodes": "2559088",
-        "inodes_used": "50447",
-        "inodes_available": "2508641",
+        "inodes_used": "49663",
+        "inodes_available": "2509425",
         "inodes_percent_used": "2%",
         "fs_type": "ext4",
         "mount_options": [
           "rw",
           "errors=remount-ro"
-        ],
-        "uuid": "a40f703a-bcc9-4112-9f9e-4c969245a689"
+        ]
       },
       "none": {
         "kb_size": "102400",
@@ -57,13 +58,13 @@
       },
       "udev": {
         "kb_size": "173032",
-        "kb_used": "12",
-        "kb_available": "173020",
+        "kb_used": "4",
+        "kb_available": "173028",
         "percent_used": "1%",
         "mount": "/dev",
         "total_inodes": "43258",
-        "inodes_used": "426",
-        "inodes_available": "42832",
+        "inodes_used": "424",
+        "inodes_available": "42834",
         "inodes_percent_used": "1%",
         "fs_type": "devtmpfs",
         "mount_options": [
@@ -73,13 +74,13 @@
       },
       "tmpfs": {
         "kb_size": "37284",
-        "kb_used": "340",
-        "kb_available": "36944",
+        "kb_used": "344",
+        "kb_available": "36940",
         "percent_used": "1%",
         "mount": "/run",
         "total_inodes": "46601",
-        "inodes_used": "342",
-        "inodes_available": "46259",
+        "inodes_used": "343",
+        "inodes_available": "46258",
         "inodes_percent_used": "1%",
         "fs_type": "tmpfs",
         "mount_options": [
@@ -103,14 +104,13 @@
         "fs_type": "ext2",
         "mount_options": [
           "rw"
-        ],
-        "uuid": "af552ce9-275e-496e-a448-743051b083fb"
+        ]
       },
       "vagrant": {
         "kb_size": "244277768",
-        "kb_used": "91816760",
-        "kb_available": "152461008",
-        "percent_used": "38%",
+        "kb_used": "95160636",
+        "kb_available": "149117132",
+        "percent_used": "39%",
         "mount": "/vagrant",
         "total_inodes": "1000",
         "inodes_used": "0",
@@ -154,13 +154,6 @@
           "mode=0620"
         ]
       },
-      "rpc_pipefs": {
-        "mount": "/run/rpc_pipefs",
-        "fs_type": "rpc_pipefs",
-        "mount_options": [
-          "rw"
-        ]
-      },
       "systemd": {
         "mount": "/sys/fs/cgroup/systemd",
         "fs_type": "cgroup",
@@ -173,13 +166,30 @@
           "name=systemd"
         ]
       },
-      "/dev/sda5": {
+      "rpc_pipefs": {
+        "mount": "/run/rpc_pipefs",
+        "fs_type": "rpc_pipefs",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "sda1": {
+        "fs_type": "ext2",
+        "uuid": "af552ce9-275e-496e-a448-743051b083fb"
+      },
+      "sda5": {
         "fs_type": "LVM2_member",
         "uuid": "s0vhE2-BIIV-SWi7-5pFn-jEXg-QyGE-l1FTFs"
       },
-      "/dev/mapper/vagrant--vg-swap_1": {
-        "fs_type": "swap",
-        "uuid": "eb4cd366-1160-441f-b494-2d47cceb152d"
+      "vagrant--vg-root": {
+        "fs_type": "(dm-0)",
+        "uuid": "(dm-0)",
+        "label": "(dm-0)"
+      },
+      "vagrant--vg-swap_1": {
+        "fs_type": "(dm-1)",
+        "uuid": "(dm-1)",
+        "label": "(dm-1)"
       },
       "rootfs": {
         "mount": "/",
@@ -277,15 +287,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "267848",
-              "packets": "268",
+              "bytes": "1864",
+              "packets": "24",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "267848",
-              "packets": "268",
+              "bytes": "1864",
+              "packets": "24",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -295,16 +305,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "239524",
-              "packets": "853",
+              "bytes": "167565",
+              "packets": "1901",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "309431",
-              "packets": "1228",
+              "bytes": "36280069",
+              "packets": "25527",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -335,13 +345,13 @@
           "size": "17671",
           "refcount": "0"
         },
+        "vboxvideo": {
+          "size": "12658",
+          "refcount": "0"
+        },
         "nfsd": {
           "size": "280297",
           "refcount": "2"
-        },
-        "psmouse": {
-          "size": "102222",
-          "refcount": "0"
         },
         "auth_rpcgss": {
           "size": "59338",
@@ -351,8 +361,8 @@
           "size": "12837",
           "refcount": "1"
         },
-        "serio_raw": {
-          "size": "13462",
+        "psmouse": {
+          "size": "102222",
           "refcount": "0"
         },
         "nfs": {
@@ -363,6 +373,10 @@
           "size": "93977",
           "refcount": "2"
         },
+        "serio_raw": {
+          "size": "13462",
+          "refcount": "0"
+        },
         "sunrpc": {
           "size": "284404",
           "refcount": "6"
@@ -371,25 +385,21 @@
           "size": "63988",
           "refcount": "1"
         },
+        "drm": {
+          "size": "302817",
+          "refcount": "1"
+        },
         "i2c_piix4": {
           "size": "22155",
-          "refcount": "0"
-        },
-        "vboxvideo": {
-          "size": "12658",
-          "refcount": "0"
-        },
-        "parport_pc": {
-          "size": "32701",
           "refcount": "0"
         },
         "vboxguest": {
           "size": "244305",
           "refcount": "2"
         },
-        "drm": {
-          "size": "302817",
-          "refcount": "1"
+        "parport_pc": {
+          "size": "32701",
+          "refcount": "0"
         },
         "lp": {
           "size": "17759",
@@ -416,23 +426,23 @@
         "free": "786428kB"
       },
       "total": "372808kB",
-      "free": "58336kB",
-      "buffers": "17020kB",
-      "cached": "194776kB",
-      "active": "104256kB",
-      "inactive": "177972kB",
-      "dirty": "88kB",
+      "free": "20084kB",
+      "buffers": "14344kB",
+      "cached": "212912kB",
+      "active": "137616kB",
+      "inactive": "161544kB",
+      "dirty": "9176kB",
       "writeback": "0kB",
-      "anon_pages": "70428kB",
-      "mapped": "9652kB",
-      "slab": "20776kB",
-      "slab_reclaimable": "13156kB",
-      "slab_unreclaim": "7620kB",
-      "page_tables": "2548kB",
+      "anon_pages": "71900kB",
+      "mapped": "9664kB",
+      "slab": "42732kB",
+      "slab_reclaimable": "34492kB",
+      "slab_unreclaim": "8240kB",
+      "page_tables": "2576kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "972832kB",
-      "committed_as": "134500kB",
+      "committed_as": "136192kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "17108kB",
       "vmalloc_chunk": "34359716856kB"
@@ -455,7 +465,7 @@
         "model": "69",
         "model_name": "Intel(R) Core(TM) i5-4258U CPU @ 2.40GHz",
         "stepping": "1",
-        "mhz": "2462.162",
+        "mhz": "2376.589",
         "cache_size": "6144 KB",
         "physical_id": "0",
         "core_id": "0",
@@ -585,7 +595,7 @@
             "Product Name": "VirtualBox",
             "Version": "1.2",
             "Serial Number": "0",
-            "UUID": "3C5527B7-59C2-4E20-90A0-97352975E48C",
+            "UUID": "6ED631C0-F162-45D2-94F5-48D166C4D02C",
             "Wake-up Type": "Power Switch",
             "SKU Number": "Not Specified",
             "Family": "Virtual Machine"
@@ -595,7 +605,7 @@
         "product_name": "VirtualBox",
         "version": "1.2",
         "serial_number": "0",
-        "uuid": "3C5527B7-59C2-4E20-90A0-97352975E48C",
+        "uuid": "6ED631C0-F162-45D2-94F5-48D166C4D02C",
         "wake_up_type": "Power Switch",
         "sku_number": "Not Specified",
         "family": "Virtual Machine"
@@ -668,7 +678,7 @@
             "String 1": "vboxVer_4.3.14",
             "String 2": "vboxRev_95030",
             "Header and Data": {
-              "80 08 08 00 CE 96 25 00": null
+              "80 08 08 00 EC 4E 24 00": null
             }
           }
         ],
@@ -678,18 +688,18 @@
     },
     "chef_packages": {
       "ohai": {
-        "version": "7.2.0",
-        "ohai_root": "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/ohai-7.2.0/lib/ohai"
+        "version": "7.2.4",
+        "ohai_root": "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/ohai-7.2.4/lib/ohai"
       },
       "chef": {
-        "version": "11.14.2",
-        "chef_root": "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.2/lib"
+        "version": "11.14.6",
+        "chef_root": "/opt/chef/embedded/lib/ruby/gems/1.9.1/gems/chef-11.14.6/lib"
       }
     },
     "command": {
       "ps": "ps -ef"
     },
-    "ohai_time": 1408394521.4875886,
+    "ohai_time": 1408407761.849564,
     "block_device": {
       "sda": {
         "size": "83886080",
